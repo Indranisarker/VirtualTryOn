@@ -10,7 +10,8 @@ To address the challenge of customers being unable to physically try on garments
 
 - **Description**: Customers can virtually try on clothing items before making a purchase.
 - **Privacy and Security**: We ensure the privacy and security of customer images.
-- ![Local Image]("C:\Users\indra\OneDrive\Pictures\Screenshots\try on.png")
+![Local Image](/absolute/path/to/"C:\Users\indra\OneDrive\Pictures\Screenshots\try on.png")
+
 
 
 ### 2. Category Function
