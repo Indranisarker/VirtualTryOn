@@ -1,0 +1,115 @@
+
+    <a href="#" class="logo"><img src="image/logo.png" alt=""></a>
+
+    <ul class="navmenu">
+        <li><a href="#">home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">New Collections</a></li>
+    </ul>
+
+    <div class="nav-icon">
+        <a href="#"><i class='bx bx-search'></i></a>
+        <a href="#"><i class='bx bx-user' ></i></a>
+        <a href="#"><i class='bx bx-cart' ></i></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+<style>
+    .navmenu{
+    display: flex;
+}
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    color: #EE1C47;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: #EE1C47;
+}
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right:-100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+    }
+    .navmenu.open{
+        right: 0;
+    }
+
+    /* Responsive-css */
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+@media(max-width:630px){
+    .main-text h1{
+        font-size: 50px;
+        transition: .4s;
+    }
+    .main-text p{
+        font-size: 18px;
+        transition: .4s;
+    }
+    .main-btn{
+        padding: 10px 20px;
+        transition: .4s;
+    }
+}
+
+@media(max-width:750px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+}
+</style>
+<script>
+    const li = document.querySelectorAll('.menu li')[0]
+    li.addEventListener('click', (e)=>{
+        e.preventDefault()
+        alert('Home Clicked')
+        window.location.href='/index.html'
+    })
+</script>
